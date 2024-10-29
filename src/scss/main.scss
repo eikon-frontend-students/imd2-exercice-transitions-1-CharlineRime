@@ -59,3 +59,147 @@ video {
 // ---------------------------------------------
 // Votre code ici :
 // ---------------------------------------------
+
+// ---------------------------------------------
+// 1
+// ---------------------------------------------
+.wrapper-hover .item:hover {
+  background: var(--pink);
+}
+
+// ---------------------------------------------
+// 2
+// ---------------------------------------------
+
+.wrapper-transition .item:hover {
+  background: var(--pink);
+}
+.wrapper-transition .item {
+  transition: background 0.5s;
+}
+// ---------------------------------------------
+// 3
+// ---------------------------------------------
+.wrapper-delay .item:hover {
+  background: var(--pink);
+}
+.wrapper-delay .item {
+  transition: background 0.5s 0.5s;
+}
+// ---------------------------------------------
+// 4
+// ---------------------------------------------
+.wrapper-two-properties .item:hover {
+  background: var(--pink);
+  color: black;
+}
+.wrapper-two-properties .item {
+  transition: background 0.5s, color 0.5s;
+}
+// ---------------------------------------------
+// 5
+// ---------------------------------------------
+.wrapper-delay-one-property .item:hover {
+  background: var(--pink);
+  color: black;
+}
+.wrapper-delay-one-property .item {
+  transition: background 0.5s, color 0.5s 0.5s;
+}
+// ---------------------------------------------
+// 6
+// ---------------------------------------------
+.wrapper-parent .item {
+  transition: background 0.5s;
+}
+.wrapper-parent:hover .item {
+  background: var(--pink);
+}
+
+// ---------------------------------------------
+// 7
+// ---------------------------------------------
+
+.wrapper-parent-delay .item:nth-child(1) {
+  transition: background 0.5s 0.2s;
+}
+.wrapper-parent-delay .item:nth-child(2) {
+  transition: background 0.5s 0.5s;
+}
+.wrapper-parent-delay .item:nth-child(3) {
+  transition: background 0.5s 0.8s;
+}
+
+.wrapper-parent-delay:hover .item {
+  background: var(--pink);
+}
+
+// ---------------------------------------------
+// 8
+// ---------------------------------------------
+
+.wrapper-parent-children .item {
+  transition: background 0.5s;
+}
+.wrapper-parent-children {
+  transition: background 0.5s;
+}
+.wrapper-parent-children:hover .item {
+  background: var(--pink);
+}
+
+.wrapper-parent-children:hover {
+  background: var(--blue);
+}
+
+// ---------------------------------------------
+// 9
+// ---------------------------------------------
+.wrapper-parent-children-delay .item {
+  transition: background 0.5s 0.5s;
+}
+.wrapper-parent-children-delay {
+  transition: background 0.5s;
+}
+.wrapper-parent-children-delay:hover .item {
+  background: var(--pink);
+}
+
+.wrapper-parent-children-delay:hover {
+  background: var(--blue);
+}
+// ---------------------------------------------
+// 10
+// ---------------------------------------------
+
+.wrapper-translate .item {
+  transition: transform 0.5s;
+}
+
+.wrapper-translate .item:hover {
+  transform: translateY(25px);
+}
+
+// ---------------------------------------------
+// 11
+// ---------------------------------------------
+
+.wrapper-rotate .item {
+  transition: transform 0.5s;
+}
+
+.wrapper-rotate .item:hover {
+  transform: rotate(90deg);
+}
+
+// ---------------------------------------------
+// 12
+// ---------------------------------------------
+
+.wrapper-scale .item {
+  transition: transform 0.5s;
+}
+
+.wrapper-scale .item:hover {
+  transform: scale(1.2);
+}
